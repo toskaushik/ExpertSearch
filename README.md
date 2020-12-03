@@ -18,7 +18,7 @@ Progress Report:
   c) Document indexing    (60% completed)
   d) Document ranking     (60% completed)
   e) UI module for search (70% completed)
-  d) Unit and integration testing
+  f) Unit and integration testing
 
 3) Are you facing any challenges?
   Not so far
