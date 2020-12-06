@@ -1,4 +1,0 @@
-doc 4 content
-here is another line
-one more line
-blah

@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../static/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="../static/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-     <script src="../static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <script src="../static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+    <style type="text/css">
+            .searchbox{
+                margin-top: 3%;
+                margin-left: 35%;
+                margin-right: 5%;
+            }
+            .main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+body {
+  font-family: arial,sans-serif;
+}
+
+#query {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.button:hover {
+  background-color: #ffeee6; /* Green */
+  color: white;
+}
+
+
+    </style>
     <title>Expert Search</title>
-  </head>
-  <body>
+</head>
+<body>
+  <img src="../static/uiuc.png" alt="Search"
+             style="width:200px;height:80px;"> <br>
 
+<div class="row">
+    <div class="main mb-0">
+        <img src="../static/doc2.png" alt="Search"
+             style="width:180px;height:100px;margin-left: 38%;"> <br> <br>
 
-    <div class="container" style="display: flex;flex-direction: column;">
-<nav class="navbar  navbar-expand-sm fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Expert Search</a>
-    </div>
-  
-      <div class="navbar-nav mx-auto" >
+<!--#ff542c -->
 
-      <div name="frmSearch">
-        <!-- <label> Enter Search Query </label> --> 
-
-        <div class="input-group add-on dropdown">
-          <div class="input-group-button " >
-        <button class="btn btn-default dropbtn" id="filterButton"><i class="material-icons" >filter_list</i></button>
-      </div>
-        <input type="text" id="query" placeholder=" Enter Search Query" class="searchbox">
-        <div class="input-group-append">
-        <button class="btn btn-default" id="submitButton" type="submit"><i class="material-icons" >search</i></button>
-      </div>
-    </div> 
+        <div class="form-group has-search" >
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" id="query" class="form-control" placeholder="Search Specialist ">
+        </div>
+        <button class="btn btn-lg btn-light button" type="submit" id="submitButton" style=" margin-left: 45%;color:#ff542c;border-color:#ccc">
+            Search
+        </button>
     </div>
 
-</div>
+    <div id="docs-div" class="col-md-8 mx-auto"></div>
 
-    <div class="navbar-nav ml-auto">
- <button class="btn btn-default" id="settingsButton" ><i class="material-icons">settings</i></button>
-   </div> 
-          
-</div>
-</nav>
-
-
-
-
-       <div class="container-fluid main_cnt">
-
-        <div class="col-md-10 mx-auto" id="search-filters" style="display: none;flex-direction: column;"> 
-     <div class="row" style="margin: 8px">
-      <h6   class="mr-auto">
-  Locations
-</h6>
-     <select class="search-filter ml-auto" name="locs[]" id="loc_filter" multiple="multiple">
-</select>
-
-
-  </div>
-
-  <div class="row" style="margin:8px;">
-     <h6 class="mr-auto">
-  Universities
-</h6>
-<select class="search-filter ml-auto"  name="unis[]" multiple="multiple" id="uni_filter">
-</select>
-
-
-</div>
-<div class="row mx-auto" style="margin-top: 10px;">
-<button type="button" class="btn btn-primary btn-sm" id="applyFilters" style="box-shadow: 0 2px 4px rgba(0,0,0,.11)">Apply Filters</button>
-</div>
-</div>
-
-      <div id="docs-div" class="col-md-10 mx-auto"></div>
-      <br>
       <center>
       <button type="button" class="btn btn-primary btn-sm" id="loadMoreButton">Load More</button>
       </center>
-    </div>
-     
-</div> 
-     
-      <script type="text/javascript">
-      var unis = {{ uni_list |tojson }};
-      var locs = {{ loc_list |tojson }};
-    </script>
-     <script src="../static/index.js"></script> 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+</div>
+<div class="container" style=" margin-left: 45%;">
 
-  </body>
+</div>
+
+<script src="../static/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+
+</body>
 </html>
