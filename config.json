@@ -1,10 +1,8 @@
 {
     "development": {
         "rootpath": "./data/",
-        "datasetpath": "./data/compiled_bios/",
-        "searchconfig": "./data/compiled_bios/config.toml",
-        "unispath": "./data/filter_data/unis.json",
-        "locspath": "./data/filter_data/locs.json"
+        "datasetpath": "./data/bios/",
+        "searchconfig": "./data/bios/config.toml"
     },
     "production": {
         "rootpath": "/data",
