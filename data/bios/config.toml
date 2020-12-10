@@ -1,7 +1,7 @@
-index = "FacultyDataset-idx"
+index = "Dataset-idx"
 prefix = "./data/"
 corpus = "file.toml"
-dataset = "compiled_bios"
+dataset = "bios"
 
 [query-runner]
 timeout = 120
