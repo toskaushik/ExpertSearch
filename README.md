@@ -30,17 +30,18 @@ The user inputs a search term like 'Cardiology' then our system will return foll
 
  Make sure you have python 2.7.x 
 
-### Step 1 - Clone code
-    Clone the code using below command 
+### Step 1 - Clone code 
     git clone https://github.com/toskaushik/ExpertSearch.git
 
+### Step 3 -  Navigate to ExpertSearch
+    cd ExpertSearch
+
 ### Step 2 -  install dependencies
-    Navigate to ExpertSearch directory and run the following command.
     pip install -r requirements.txt
 
 ### Step 3 -  run the application using Gunicorn
     gunicorn server:app -b 127.0.0.1:5000
-
+    
 
 ## Progress Report:
 
