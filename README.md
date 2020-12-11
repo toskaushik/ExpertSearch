@@ -6,16 +6,16 @@ At part of search we will display specialization, doctor and contact information
 
 
 ## Team members :
-1 Ambalika Roy
-2 Sharad Kaushik
-3 Faizan Ali Danish Khan
+1. Ambalika Roy
+2. Sharad Kaushik
+3. Faizan Ali Danish Khan
 
 ## Implementation of the application:
 
 ### 1 Front end: 
     We used java script, CSS3 and bootstrap to create UI.
 ### 2 Back end: 
-   Gunicorn,Flask and python
+    Gunicorn,Flask and python.
 
 An overview of the Software
 The purpose of the code is find the specilized doctor based on search term.
@@ -31,15 +31,15 @@ The user inputs a search term like 'Cardiology' then our system will return foll
  Make sure you have python 2.7.x 
 
 ### Step 1 - Clone code
-Clone the code using below command 
-git clone https://github.com/toskaushik/ExpertSearch.git
+    Clone the code using below command 
+    git clone https://github.com/toskaushik/ExpertSearch.git
 
 ### Step 2 -  install dependencies
-Navigate to ExpertSearch directory and run the following command.
-pip install -r requirements.txt
+    Navigate to ExpertSearch directory and run the following command.
+    pip install -r requirements.txt
 
 ### Step 3 -  run the application using Gunicorn
-gunicorn server:app -b 127.0.0.1:5000
+    gunicorn server:app -b 127.0.0.1:5000
 
 
 ## Progress Report:
