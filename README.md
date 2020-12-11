@@ -6,14 +6,16 @@ At part of search we will display specialization, doctor and contact information
 
 
 ## Team members :
-Ambalika Roy
-Sharad Kaushik
-Faizan Ali Danish Khan
+1 Ambalika Roy
+2 Sharad Kaushik
+3 Faizan Ali Danish Khan
 
 ## Implementation of the application:
 
-### Front end: We used java script, CSS3 and bootstrap to create UI.
-### Back end: Gunicorn,Flask and python
+### 1 Front end: 
+    We used java script, CSS3 and bootstrap to create UI.
+### 2 Back end: 
+   Gunicorn,Flask and python
 
 An overview of the Software
 The purpose of the code is find the specilized doctor based on search term.
