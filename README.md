@@ -17,7 +17,7 @@ At part of search we will display specialization, doctor and contact information
 ### 2 Back end: 
     Gunicorn,Flask and python.
 
-An overview of the Software
+## An overview of the Software:
 The purpose of the code is find the specilized doctor based on search term.
 The user inputs a search term like 'Cardiology' then our system will return following results.
 •	Total number of dcotor who are specilzied in cardilogy
