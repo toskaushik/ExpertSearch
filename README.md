@@ -1,24 +1,21 @@
 CS410_Final_Project - #Professional Health Search
 
-Team members :
-
-Ambalika Roy
-Sharad Kaushik
-Faizan Ali Danish Khan
-
-
 Introduction : 
 The system aims to find medical health professionals in the given research areas. The underlying data we are collecting from web crawler from different hospitals like https://nyulangone.org/ and rank it. The code is available here. We are utilizing the common code from Expert Search system (https://github.com/CS410Fall2020/ExpertSearch).
 At part of search we will display specialization, doctor and contact information. For Ranking we will use BM25. 
 
 
+Team members :
+Ambalika Roy
+Sharad Kaushik
+Faizan Ali Danish Khan
+
 Implementation of the application:
 
 Front end: We used java script, CSS3 and bootstrap to create UI.
-
 Back end: Gunicorn,Flask and python
 
-An overview of the function of the code.
+An overview of the Software
 The purpose of the code is find the specilized doctor based on search term.
 The user inputs a search term like 'Cardiology' then our system will return following results.
 •	Total number of dcotor who are specilzied in cardilogy
@@ -29,14 +26,14 @@ The user inputs a search term like 'Cardiology' then our system will return foll
 
 Steps to run the code.
 
-Make sure you have python 2.7.x 
+ Make sure you have python 2.7.x 
 
 Step 1 - Clone code
 Clone the code using below command 
-git clone
+git clone https://github.com/toskaushik/ExpertSearch.git
 
 Step 2 -  install dependencies
-
+Navigate to ExpertSearch directory and run the following command.
 pip install -r requirements.txt
 
 Step 3 -  run the application using Gunicorn
