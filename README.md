@@ -20,7 +20,7 @@ At part of search we will display specialization, doctor and contact information
 ## An overview of the Software:
    The purpose of the code is find the specialized doctors based on search term.
    The user inputs a search term like 'Cardiology' then our system will return following results.
-    1.	Total number of dcotors who are specilzied in Cardiology
+    1.	Total number of doctors who are specilzied in Cardiology
     2.	Matching term preview.
     3.	Doctors name and degree.
     4.	A link to navigate to doctor info page
