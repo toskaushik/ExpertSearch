@@ -1,4 +1,4 @@
-# CS410_Final_Project - #Professional Health Search
+# CS410_Final_Project - Professional Health Search
 
 ## Introduction : 
 The system aims to find medical health professionals in the given research areas. The underlying data we are collecting from web crawler from different hospitals like https://nyulangone.org/ and rank it. The code is available here. We are utilizing the common code from Expert Search system (https://github.com/CS410Fall2020/ExpertSearch).
