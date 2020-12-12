@@ -41,4 +41,5 @@ At part of search we will display specialization, doctor and contact information
 
 #### Step 4 -  Run the application using Gunicorn
     gunicorn server:app -b 127.0.0.1:5000
-  
+ 
+##### Note - We tested Application in Mac and Linux OS.
