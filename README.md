@@ -6,9 +6,9 @@ At part of search we will display specialization, doctor and contact information
 
 
 ## Team members :
-1. Ambalika Roy (UI implementation + presenation )
+1. Ambalika Roy (UI implementation and presentation )
 2. Sharad Kaushik (Data collection and cleaning )
-3. Faizan Ali Danish Khan (Service implementation and  deployment)
+3. Faizan Ali Danish Khan (Backend implementation and  deployment)
 
 ## Implementation of the application:
 
