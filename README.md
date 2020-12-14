@@ -6,9 +6,11 @@ At part of search we will display specialization, doctor and contact information
 
 
 ## Team members :
-1. Ambalika Roy (UI implementation and presentation )
-2. Sharad Kaushik (Data collection and cleaning )
-3. Faizan Ali Danish Khan (Backend implementation and  deployment)
+1. Ambalika Roy
+2. Sharad Kaushik
+3. Faizan Ali Danish Khan
+
+[Professional Health Search Demo](http://34.238.135.24:5000/)
 
 ## Implementation of the application:
 
